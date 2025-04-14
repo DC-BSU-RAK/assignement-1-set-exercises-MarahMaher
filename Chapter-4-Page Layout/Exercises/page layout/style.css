@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #17072b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+  }
+  
+  header h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Welcome Section */
+  .welcome {
+    width: 70%;
+  }
+  
+  .welcome h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  .welcome p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .welcome img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Lineup Section */
+  .lineup {
+    width: 30%;
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .lineup h2 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  .lineup ul {
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+  
+  .lineup ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Lineup Images */
+  .lineup .images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .lineup .images img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #8c15e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+  }
+  
