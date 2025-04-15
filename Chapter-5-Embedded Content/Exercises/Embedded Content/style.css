@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #4d6485, #a2b0de);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.video-container {
+    background-color: rgba(241, 243, 245, 0.9);
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 30px rgba(37, 96, 216, 0.2);
+}
+
+
+.video-container h1 {
+    color: #0d1012;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+
+video {
+    width: 100%;
+    max-height: 70vh;
+    border-radius: 12px;
+    border: 3px solid #0f1214;
+    box-shadow: 0 4px 15px rgba(58, 100, 213, 0.15);
+}
+
+
+.video-container p {
+    color: #333;
+    margin-top: 15px;
+    font-size: 16px;
+}
