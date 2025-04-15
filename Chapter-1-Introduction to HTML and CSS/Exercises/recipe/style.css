@@ -1,35 +1,67 @@
-/* Basic page styling */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #fffaf5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfaf5;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Recipe title styling */
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
 h1 {
-    color: #3b7a57;
-    font-family: 'Georgia', serif;
-}
-
-/* Section headers */
-h2 {
-    margin-top: 30px;
-    color: #2c3e50;
-}
-
-/* List spacing */
-ul, ol {
-    margin-left: 20px;
-}
-
-/* Space between list items */
-li {
+    text-align: center;
+    font-size: 2.5em;
+    color: #5d4037;
     margin-bottom: 10px;
 }
 
-/* Paragraph styling */
-p {
-    max-width: 700px;
+
+h2 {
+    color: #0d0604;
+    margin-top: 30px;
+    border-bottom: 2px solid #97c56f;
+    padding-bottom: 5px;
+}
+
+
+.description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #0d0f06;
+}
+
+
+.recipe-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+ul, ol {
+    padding-left: 20px;
+    font-size: 1.05em;
+    line-height: 1.8;
+}
+
+ul li::marker {
+    color: #8d6e63;
+}
+
+ol li {
+    margin-bottom: 10px;
 }
