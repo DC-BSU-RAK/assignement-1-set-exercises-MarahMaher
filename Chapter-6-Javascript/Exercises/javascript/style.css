@@ -1,45 +1,80 @@
+/* Global Styles */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F5F5F5;
+    height: 100vh;
 }
 
+/* Container */
 .container {
-    width: 600px;
-    height: 400px;
-    background-color: #445A6F;
-    color: #FFFFFF;
-    padding: 25px;
-    border-radius: 10px;
-    margin-top: 20px;
-    h1{
-        display: flex;
-        justify-content: center;
-        align-items: centre;
-        background-color: black;
-        padding: 5px;
-        border-radius: 5px;
-
-    }
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
 }
 
+/* Header Styling */
+h1 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Wrapper Styling */
 .wrapper {
     display: flex;
-    div{
-        margin:20px;
-
-    }
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
-#btn{
-    margin-top: 30px;
-    button{
-        background-color: blue;
-        border-radius: 5px;
-        border: 2px solid black;
-    }
 
-button:hover{
-    background-color: chartreuse;
+.wrapper div {
+    width: 45%;
 }
+
+/* Input Styling */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Total amount styling */
+h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Output amount styling */
+#totalAmount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50;
 }

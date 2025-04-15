@@ -1,16 +1,18 @@
-window.onload = () => {
-    const inputs = document.querySelectorAll("input");
+// Function to calculate the total petrol cost
+function calculate() {
+    // Get the input values for petrol price and liters
+    const petrolPrice = parseFloat(document.getElementById('Petrol_Price').value);
+    const liters = parseFloat(document.getElementById('liters').value);
 
-    inputs.forEach(input => {
-        input.addEventListener('change', calculate)
-    })
-}
+    // Ensure the values are valid numbers
+    if (isNaN(petrolPrice) || isNaN(liters) || petrolPrice <= 0 || liters <= 0) {
+        document.getElementById('totalAmount').innerText = 'Please enter valid values.';
+        return;
+    }
 
-function calculate () {
-    const Petrol_Price = document.querySelector('#Petrol_Price').value;
-    const liters = document.querySelector('#liters').value;
+    // Calculate the total amount
+    const totalAmount = petrolPrice * liters;
 
-    if (!Petrol_Price || !liters) return;
-
-    document.querySelector('#totalAmount').innerText = Petrol_Price * liters;
+    // Display the total amount
+    document.getElementById('totalAmount').innerText = `$${totalAmount.toFixed(2)}`;
 }
