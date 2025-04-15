@@ -1,0 +1,88 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Gallery Layout */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.car-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.car-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+/* CSS Filters */
+.car-card:nth-child(1) img {
+    filter: contrast(110%) saturate(120%) brightness(95%);
+}
+
+.car-card:nth-child(2) img {
+    filter: grayscale(30%) contrast(105%) brightness(90%);
+}
+
+.car-card:nth-child(3) img {
+    filter: sepia(20%) contrast(110%) brightness(95%);
+}
+
+.car-card:hover img {
+    filter: none;
+}
+
+/* License Text */
+.license {
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #222;
+    color: #fff;
+}
